@@ -7,7 +7,7 @@ class Jarvis(Client):
 
     # Connect to dialogflow
     def apiaiCon(self):
-        self.CLIENT_ACCESS_TOKEN = "e21b832dff504068b9afd91fb57ba172"
+        self.CLIENT_ACCESS_TOKEN = "access token from Dialogflow"
         self.ai = apiai.ApiAI(self.CLIENT_ACCESS_TOKEN)
         self.request = self.ai.text_request()
         self.request.lang = 'de'  # Default : English
@@ -46,7 +46,7 @@ class Jarvis(Client):
 
 
 # Create an object of our class, enter your email and password for facebook.
-client = Jarvis("chemiboti@20minutemail.it", "botiboti123")
+client = Jarvis("your facebook login credentials", "your password")
 
 # Listen for new message
 client.listen()
